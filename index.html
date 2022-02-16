@@ -6,17 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Responsividade -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Owl css -->
+    <link rel="stylesheet" href="assets/css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl/owl.theme.default.min.css">
+
 </head>
 
 <body>
     <header>
         <div class="container">
-            <h1 class="logo">Netflix</h1>
+            <img class="logo"
+                src="https://images.ctfassets.net/4cd45et68cgf/7LrExJ6PAj6MSIPkDyCO86/542b1dfabbf3959908f69be546879952/Netflix-Brand-Logo.png?w=684&h=456"
+                alt="logo-netflix">
             <nav>
                 <a href="#">Inicio</a>
-                <a href="#">Séries</a>
-                <a href="#">Filmes</a>
+                <a href="#filmes">Filmes</a>
+                <a href="#series">Séries</a>
                 <a href="#">Documentários</a>
             </nav>
         </div>
@@ -29,22 +39,103 @@
                 <p class="descricao">Nos Estados Unidos pós-apocalíptico, um pequeno grupo de sobreviventes segue
                     viajando à procura de uma nova casa longe dos mortos-vivos. O desespero por segurança e suprimentos
                     os coloca constantemente à beira da sanidade.</p>
-            </div>
-            <div class="botoes">
-                <button role="button" class="botao">
-                    <i class="fa-solid fa-play"></i>
-                    ASSISTIR AGORA
-                </button>
-                <button role="button" class="botao">
-                    <i class="fa-solid fa-circle-info"></i>
-                    MAIS INFORMAÇÕES
-                </button>
+
+                <div class="botoes">
+                    <button role="button" class="botao">
+                        <i class="fa-solid fa-play"></i>
+                        <a class="link" href="https://www.youtube.com/watch?v=BXqUmob-nfg" target="_blank">ASSISTIR
+                            AGORA</a>
+                    </button>
+                    <button role="button" class="botao">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <a class="link"
+                            href="https://www.tecmundo.com.br/minha-serie/the-walking-dead#:~:text=Resumo-,The%20Walking%20Dead%20%C3%A9%20uma%20s%C3%A9rie%20norte%2Damericana%20transmitida%20originalmente,busca%20de%20um%20lar%20seguro." target="_blank">MAIS
+                            INFORMAÇÕES</a>
+                    </button>
+                </div>
             </div>
         </div>
     </main>
 
+    <div class="title-1">
+        <h2 id="filmes">Filmes</h2>
+    </div>
+
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filme" src="assets/img/mini1.jpg" alt="#">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="assets/img/mini2.jpg" alt="#">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="assets/img/mini3.jpg" alt="#">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="assets/img/mini4.jpg" alt="#">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="assets/img/mini5.jpg" alt="#">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="assets/img/mini6.jpg" alt="#">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="assets/img/mini7.jpg" alt="#">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="assets/img/mini8.jpg" alt="#">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="assets/img/mini9.jpg" alt="#">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="title-1">
+        <h2 id="series">Séries</h2>
+    </div>
+
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filme" src="assets/img/series1.jpg" alt="#">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="assets/img/series2.jpg" alt="#">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="assets/img/series3.jpg" alt="#">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="assets/img/series4.jpg" alt="#">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="assets/img/series5.jpg" alt="#">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="assets/img/series6.jpg" alt="#">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="assets/img/series7.jpg" alt="#">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="assets/img/series8.jpg" alt="#">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="assets/img/series9.jpg" alt="#">
+            </div>
+
+        </div>
+    </div>
+
 
     <script src="https://kit.fontawesome.com/cc4195214e.js" crossorigin="anonymous"></script>
+    <script src="assets/js/owl/jquery.min.js"></script>
+    <script src="assets/js/owl/owl.carousel.min.js"></script>
+    <script src="assets/js/owl/setup.js"></script>
 </body>
 
 </html>

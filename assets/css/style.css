@@ -22,12 +22,12 @@ header .container {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin: 0px 60px 0px 0px;
 }
 
 header .logo {
-    color: var(--vermelho);
-    font-family: 'Bebas Neue', cursive;
-    font-size: 60px;
+    width: 200px;
+    justify-content: center;
 }
 
 header nav a {
@@ -35,6 +35,7 @@ header nav a {
     color: #AAA;
     margin-right: 10px;
     font-family: 'Bebas Neue', cursive;
+    font-size: 22px;
 }
 
 header nav a:hover {
@@ -46,16 +47,19 @@ header nav a:hover {
 .filme-principal {
     color: white;
     font-size: 16px;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) 100%), url('img/bg-twd.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) 100%), url('/assets/img/bg-twd.jpg');
 
-    height: 400px;
+    height: 450px;
     background-size: cover;
+    background-position: center;
 
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+
+    margin-bottom: 20px;
 }
 
 .filme-principal .descricao {
@@ -83,6 +87,11 @@ header nav a:hover {
     transition: .5s ease all;
 }
 
+.link {
+    text-decoration: none;
+    color: white;
+}
+
 .botao:hover {
     background: white;
     color: black;
@@ -90,4 +99,26 @@ header nav a:hover {
 
 .botao i {
     margin-right: 8px;
+}
+
+.filme-principal .container {
+    width: 80%;
+    margin-left: 30px;
+    margin-bottom: 100px;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes {
+    margin: 0px 20px 0px 20px;
+}
+
+.title-1{
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 30px 0px 20px 30px;
 }
